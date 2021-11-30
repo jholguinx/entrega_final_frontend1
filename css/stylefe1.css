@@ -5,7 +5,7 @@
   --base: white;
   --primario: #242e52;
   --secundario: #f3603b;
-  --hovercolor: #343d5a;
+  --hovercolor: #f3603b;
   --gris: #8a8787;
  
 }
@@ -37,14 +37,14 @@ input {
   border-radius: 50px;
   width: 195px;
   height: 44px;
-  padding: 8px;
+  padding: 12px;
   color: var(--gris);
   margin: 5px;
 }
 
 h1 {
   color: var(--primario);
-  font-size: 45px;
+  font-size: 3rem;
   font-weight: bold;
   letter-spacing: -0.035em;
   display: flex;
@@ -54,7 +54,7 @@ h2 {
   color: var(--base);
   font-style: normal;
   font-weight: bold;
-  font-size: 38px;
+  font-size: 2.5rem;
 
   display: flex;
   align-items: center;
@@ -64,7 +64,7 @@ h2 {
 h3 {
   font-style: normal;
   font-weight: bold;
-  font-size: 36px;
+  font-size: 2.4rem;
   line-height: 114.6%;
   display: flex;
   align-items: center;
@@ -74,10 +74,9 @@ h3 {
 h4 {
   font-style: normal;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 1.05rem;
   line-height: 23px;
   display: flex;
- 
   align-items: center;
   letter-spacing: -0.015em;
   color: var(--primario);
@@ -89,7 +88,7 @@ h5 {
   padding-top: 115px;
   font-style: normal;
   font-weight: bold;
-  font-size: 39.2143px;
+  font-size: 2.5rem;
   display: flex;
   color: var(--primario);
   justify-content: space-around;
@@ -111,7 +110,7 @@ h5 {
 
 .topnav {
   justify-content: space-around;
-  max-width: 1100px;
+  max-width: 90vw;
   margin: auto;
   height: 174px;
   display: flex;
@@ -140,7 +139,7 @@ h5 {
 }
 
 .menu a {
-  font-size: 14px;
+  font-size: 0.9rem;
   font-weight: 400;
   line-height: 50px;
   position: relative;
@@ -232,6 +231,7 @@ h5 {
   height: 43px;
   position: relative;
   right: 8px;
+  z-index: 150;
  
 }
 
@@ -270,7 +270,7 @@ h5 {
   height: max-content;
 
   display: flex;
-  max-width: 85vw;
+  max-width: 90vw;
   margin: auto;
   justify-content: space-around;
   align-items: center;
@@ -278,7 +278,7 @@ h5 {
   margin-bottom: 0px;
 }
 .slider {
-  max-width: 1400px;
+  max-width: 90vw;
   display: flex;
 
   justify-content: space-around;
@@ -348,7 +348,7 @@ h5 {
   padding: 0;
   width: 20px;
   height: 20px;
-  font-size: 20px;
+  font-size: 1.2rem;
   border-radius: 100%;
 }
 
@@ -382,7 +382,7 @@ h5 {
 
 .subfooterbox {
   justify-content: space-around;
-  max-width: 1400px;
+  max-width: 90vw;
   margin: auto;
   height: 224px;
   display: flex;
@@ -417,7 +417,7 @@ h5 {
 
 .footerbox {
   justify-content: space-around;
-  max-width: 1400px;
+  max-width: 80vw;
   margin: auto;
   height: 200px;
   display: flex;
@@ -456,6 +456,7 @@ h5 {
   list-style: none;
   flex-direction: column;
   align-items: flex-start;
+  
 }
 
 .footermenu li {
@@ -467,8 +468,7 @@ h5 {
   color: var(--base);
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
-
+  font-size: 1.1rem;
   line-height: 36px;
 }
 
@@ -494,6 +494,7 @@ h5 {
   width: 55px;
   height: 44px;
   color: var(--base);
+  margin: 5px;
 }
 
 .copyrg {
@@ -524,10 +525,10 @@ h5 {
 @media (max-width: 950px) {
   .footerbox {
     text-align: center;
-    height: 500px;
+    height: 400px;
   }
   .footer {
-    height: 500px;
+    height: 400px;
   }
   
 }
@@ -537,7 +538,7 @@ h5 {
   h4 {
     font-style: normal;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 1rem;
     line-height: 23px;
     display: flex;
     align-items: center;
@@ -546,6 +547,8 @@ h5 {
     position: relative;
     left: 0;
     background-color: #f09c5741;
+    border-top-left-radius: 15%;
+    border-bottom-left-radius: 15%;
   }
 
   .menu {
@@ -570,7 +573,7 @@ h5 {
   .menu a {
     color: var(--base);
     line-height: 70px;
-    font-size: 25px;
+    font-size: 1.9rem;
   }
   .get-started {
     display: unset;
@@ -618,6 +621,13 @@ h5 {
     justify-content: flex-end;
   }
 
+  .footermenu {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    align-items: center;
+    
+  }
 
   .footerbox {
     text-align: center;
@@ -631,10 +641,10 @@ h5 {
     padding-right: 0%;
     margin: 5vw;
     text-align: center;
-    height: 300px;
+    height: 325px;
   }
   .subfooter {
-    height: 300px;
+    height: 325px;
   }
 
   .button_orange {
@@ -674,6 +684,16 @@ h5 {
     position: relative;
     top: 35px;
   }
+  .inboxupdate {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 150px;
+    text-align: center;
+    margin: 35px;
+  }
+  
 
  
   .menuslide {
@@ -686,6 +706,16 @@ h5 {
   .graph {
     max-width: 85vw;
     max-height: 85vh;
+  }
+ 
+}
+
+@media (max-width: 350px) {
+  h4 {
+   font-size: 0.9rem;
+   border-top-left-radius: 19%;
+   border-bottom-left-radius: 19%;
+   
   }
  
 }
